@@ -5,9 +5,64 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
-    <title>Vite App</title>
+    <title>Contact Form</title>
   </head>
   <body>
+    
+    <section class="bg-custom-bg-200 w-full flex flex-col items-center justify-center">
+      <form action="#" method="post" class="bg-white p-10 rounded-2xl w-11/12 lg:w-4/6 my-20">
+        <h2 class="font-semibold text-3xl pb-10">Contact Us</h2>
+
+        <div class="flex flex-col lg:flex-row items-start justify-start w-full gap-3 pb-5">
+          <div class="w-full">
+            <p>First Name <span>*</span></p>
+            <input type="text" class="border outline-none text-xl border-solid border-gray-400 py-2 px-4 rounded-xl w-full">
+          </div>
+          <div class="w-full">
+            <p>Last Name <span>*</span></p>
+            <input type="text" class="border outline-none text-xl border-solid border-gray-400 py-2 px-4 rounded-xl w-full">
+          </div>
+        </div>
+
+        <div class="w-full pb-5">
+          <div class="flex flex-col items-start justify-start w-full">
+            <p>Email Address <span>*</span></p>
+            <div class="w-full border text-xl border-solid border-gray-400 py-2 px-4 rounded-xl">
+              <input type="text" class="w-full outline-none">
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full pb-5">
+          <p>Query type <span>*</span></p>
+          <div class="flex flex-col lg:flex-row gap-3 items-start justify-start">
+            <div class="w-full flex items-center gap-2 border text-xl border-solid border-gray-400 py-2 px-4 rounded-xl">
+              <input type="radio" name="group" class="w-5 h-5">
+              <p class="text-base">General Enquiry</p>
+            </div>
+            <div class="w-full flex items-center gap-2 border text-xl border-solid border-gray-400 py-2 px-4 rounded-xl">
+              <input type="radio" name="group" class="w-5 h-5">
+              <p class="text-base">General Enquiry</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-full pb-5">
+          <p>Message *</p>
+          <textarea class="w-full flex items-center gap-2 outline-none resize-none h-32 border text-xl border-solid border-gray-400 py-2 px-4 rounded-xl"></textarea>
+        </div>
+
+        <div class="w-full flex items-center justify-start gap-4 py-10">
+          <input type="checkbox" class="align-middle" style="width: 1rem; height: 1rem;">
+          <p>I consent to being contracted by the term *</p>
+        </div>
+
+        <button class="w-full py-5 text-white bg-custom-green-200 rounded-xl text-lg font-semibold">
+          Submit
+        </button>
+
+      </form>
+    </section>
     
   </body>
 </html>
